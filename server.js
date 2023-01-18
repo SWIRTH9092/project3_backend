@@ -1,16 +1,23 @@
 //--------------------------------------
-//  Dependencies
+// Dependencies
 //--------------------------------------
 
 require("dotenv").config();
 //get .env variables
-const{ PORT = 3000 } = process.env;
+
 
 //import express
 const express = require("express");
+const middleware = require("./utils/middleware");
 
 //create application object
 const app=express();
+
+//--------------------------------------
+//  Middle
+//--------------------------------------
+
+middleware(app);
 
 //--------------------------------------
 //  Routes
@@ -24,5 +31,5 @@ app.get("/", (req, res) => {
 //--------------------------------------
 //  Listener
 //--------------------------------------
-
+const{ PORT = 3000 } = process.env;
 app.listen(PORT, () => console.log(`listening on PORT ${PORT}`))
