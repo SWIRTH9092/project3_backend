@@ -18,7 +18,7 @@ const placeSchema = new Schema({
 
 // make Place model
 const Place = model("Place", placeSchema);
-console.log("Place", Place)
+
 //-------------------------------------------
 // Export Place Model
 //-------------------------------------------
