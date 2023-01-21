@@ -25,4 +25,4 @@ const placePost = (req, res) => {
 //  Export controller function
 //----------------------------
 
-module.exports = placePost
+module.exports = placePost         
