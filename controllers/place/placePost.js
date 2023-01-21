@@ -6,7 +6,7 @@
 // for MongoDB database
 const Place = require("../../models/place")
 
-const placeIndex = async (req, res) => {
+const placePost = async (req, res) => {
     try {
         // send all places
         res.json(await Place.find({}));
@@ -22,4 +22,4 @@ const placeIndex = async (req, res) => {
 //  Export controller function
 //----------------------------
 
-module.exports = placeIndex
+module.exports = placePost
