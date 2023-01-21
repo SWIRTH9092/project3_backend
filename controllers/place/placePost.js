@@ -16,7 +16,7 @@ const placeIndex = async (req, res) => {
     }
 };
 
-
+                            
 
 //----------------------------
 //  Export controller function
