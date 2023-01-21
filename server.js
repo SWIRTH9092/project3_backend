@@ -20,15 +20,6 @@ const app=express();
 middleware(app);
 
 //--------------------------------------
-//  Routes
-//--------------------------------------
-
-//create a test route
-app.get("/", (req, res) => {
-    res.send("hello world");
-});
-
-//--------------------------------------
 //  Listener
 //--------------------------------------
 const{ PORT = 3000 } = process.env;
